@@ -175,7 +175,7 @@ img {
 
 /* Section Hero*/
 
-.hero__container {
+.hero__section {
   padding: 200px 0;
   background-color: var(--bg-darkgrey-color);
   color: var(--primary-white-color);
@@ -483,6 +483,7 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .features-list {
   display: flex;
   /* flex-wrap: wrap; */
@@ -503,7 +504,7 @@ img {
   margin-bottom: var(--indent);
 }
 
-.features-item-title {
+.section-subtitle {
   color: var(--secondary-color);
   margin-bottom: 10px;
   font-weight: 700;
@@ -536,10 +537,10 @@ img {
   gap: var(--indent);
 }
 
-.about-item {
+.about-list__item {
   position: relative;
 }
-.img-descr {
+.about-list__descr {
   position: absolute;
   display: flex;
   width: 370px;
@@ -549,7 +550,7 @@ img {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.title-image {
+.about-subtitle {
   position: absolute;
   display: flex;
   align-items: center;
