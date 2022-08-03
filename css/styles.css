@@ -70,17 +70,12 @@ img {
   outline: 2px solid red;
   outline-offset: -2px;
 }
-.border {
+.header-border {
   border-bottom: 1px solid var(--header-border);
 }
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
-}
-
-.header-contacts-nav {
-  display: flex;
-  align-items: baseline;
 }
 
 .logo {
@@ -89,6 +84,9 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+}
+
+.header__logo {
   margin-right: 93px;
 }
 
@@ -97,7 +95,7 @@ img {
 }
 
 /* Nav site */
-.nav {
+.header__nav {
   margin-right: auto;
 }
 
@@ -107,6 +105,7 @@ img {
   padding-bottom: 32px;
   transition: color var(--animation);
 }
+
 .nav__list {
   color: var(--secondary-color);
   font-weight: 500;
@@ -121,12 +120,12 @@ img {
   color: var(--accent-color);
 }
 
-.current {
+.nav-link--current {
   position: relative;
   color: var(--accent-color);
 }
 
-.current::after {
+.nav-link--current::after {
   content: ' ';
   position: absolute;
   bottom: 0px;
@@ -138,25 +137,34 @@ img {
   background-color: var(--accent-color);
 }
 
-.header-mail {
-  margin-right: 50px;
+.header-contacts__item {
+  display: flex;
+  align-items: baseline;
 }
 
 /* Nav contacts  */
-/* Icons header */
-
-.icon {
-  display: inline-block;
-  fill: currentColor;
-  vertical-align: middle;
+.header__mail {
+  margin-right: 50px;
 }
 
 /* .contacts-mail,
 .contacts-phone {
 } */
 
-.header-mail,
-.header-phone {
+.header-contacts__item :hover,
+.header-contacts__item :focus {
+  color: var(--accent-color);
+}
+
+.header__icons {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.header__mail,
+.header__phone {
   color: var(--description-color);
   font-weight: 500;
   font-size: 14px;
@@ -164,14 +172,10 @@ img {
   transition: color var(--animation);
 }
 /* align-items: baseline; */
-.header-contacts-nav :hover,
-.header-contacts-nav :focus {
-  color: var(--accent-color);
-}
 
 /* Section Hero*/
 
-.hero-section {
+.hero__container {
   padding: 200px 0;
   background-color: var(--bg-darkgrey-color);
   color: var(--primary-white-color);
@@ -610,12 +614,13 @@ img {
   background-color: var(--primary-white-color);
 }
 /* Socials icons */
-.icons {
+
+.icon {
   display: inline-block;
   fill: currentColor;
   vertical-align: middle;
-  margin-right: 10px;
 }
+
 .socials {
   display: flex;
   align-items: center;

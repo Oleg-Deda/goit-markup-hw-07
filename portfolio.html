@@ -18,25 +18,31 @@
 
 <body>
   <!-- Top line -->
-  <header class="border">
-    <div class="header container">
-      <a class="header logo" href="" lang="en">Web<span class="logo-accent">Studio</span></a>
-      <nav class="header-nav">
-        <ul class="list header-list">
-          <li><a class="header-link" href="./index.html">Студия</a></li>
-          <li><a class="current header-link" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="header-link" href="#contacts">Контакты</a></li>
+  <header class="header header-border">
+    <div class="container header__container ">
+      <a class="logo" href="" lang="en">Web<span class="logo-accent">Studio</span></a>
+      <nav class="nav">
+        <ul class="nav__list list">
+          <li class="nav__item">
+            <a class="nav-link" href="./index.html">Студия</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link nav-link--current" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="#contacts">Контакты</a>
+          </li>
         </ul>
       </nav>
-      <ul class="header-contacts-nav list">
+      <ul class="header-contacts__item list">
         <li>
-          <a class="header-mail" href="mailto:info@devstudio.com"><svg class="mail-icon icons" width="16" height="12">
+          <a class="header__mail" href="mailto:info@devstudio.com"><svg class="header__icons" width="16" height="12">
               <use href="./images/icons.svg#envelope"></use>
             </svg>
             info@devstudio.com</a>
         </li>
         <li>
-          <a class="header-phone" href="tel:+380961111111"><svg class="tel-icon icons" width="10" height="16">
+          <a class="header__phone" href="tel:+380961111111"><svg class="header__icons" width="10" height="16">
               <use href="./images/icons.svg#smartphone"></use>
             </svg>+38 096 111 11 11</a>
         </li>
