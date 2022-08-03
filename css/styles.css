@@ -96,12 +96,12 @@ img {
   color: var(--secondary-color);
 }
 
+/* Nav site */
 .nav {
   margin-right: auto;
 }
 
-/* Nav site */
-.header-link {
+.nav-link {
   display: inline-flex;
   padding-top: 32px;
   padding-bottom: 32px;
