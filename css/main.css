@@ -19,7 +19,7 @@
   --filter-indent: 8px;
   --items: 3;
   --border-radius-standart: 4px;
-  --animation: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visually-hidden {
@@ -68,17 +68,6 @@ img {
   display: block;
 }
 
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.link {
-  text-decoration: none;
-  color: currentColor;
-}
-
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -96,6 +85,12 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: var(--indent);
+}
+
+.project__item {
+  --items: 3;
+  -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+      flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
 .hero__button {
@@ -212,9 +207,20 @@ img {
   background-color: var(--primary-white-color);
 }
 
-.section {
+.clients, .team, .about, .features {
   padding-bottom: 94px;
   padding-top: 94px;
+}
+
+.footer__list, .clients__list, .socials__list, .team__list, .about__list, .features__list, .header__item, .nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.clients-link, .socials__link {
+  text-decoration: none;
+  color: currentColor;
 }
 
 .hero__title {
@@ -780,7 +786,7 @@ img {
   line-height: 1.71;
 }
 
-.about.section {
+.about {
   padding-top: 0;
 }
 
@@ -1016,6 +1022,19 @@ img {
   color: var(--accent-color);
 }
 
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .footer__link {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
@@ -1212,12 +1231,6 @@ img {
   color: var(--primary-white-color);
 }
 
-.project__item {
-  --items: 3;
-  -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
-      flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
-}
-
 .project__elements {
   position: relative;
   overflow: hidden;
@@ -1230,10 +1243,10 @@ img {
   padding: 63px 24px;
   -webkit-transform: translateY(0);
           transform: translateY(0);
-  -webkit-transition: var(--animation), -webkit-transform;
-  transition: var(--animation), -webkit-transform;
-  transition: transform, var(--animation);
-  transition: transform, var(--animation), -webkit-transform;
+  -webkit-transition: -webkit-transform var(--animation);
+  transition: -webkit-transform var(--animation);
+  transition: transform var(--animation);
+  transition: transform var(--animation), -webkit-transform var(--animation);
   background-color: rgba(33, 150, 243, 0.9);
 }
 

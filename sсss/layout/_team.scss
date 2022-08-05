@@ -1,4 +1,9 @@
+.team {
+  @extend %section;
+}
+
 .team__list {
+  @extend %reset-list;
   display: flex;
   flex-wrap: wrap;
   gap: var(--indent);
@@ -22,6 +27,7 @@
 }
 
 .socials__link {
+  @extend %reset-link;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,6 +45,7 @@
 }
 
 .socials__list {
+  @extend %reset-list;
   display: flex;
   align-items: center;
   gap: 10px;

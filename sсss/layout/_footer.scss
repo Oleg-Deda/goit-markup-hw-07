@@ -60,6 +60,14 @@
   color: var(--accent-color);
 }
 
+.footer__list {
+  @extend %reset-list;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
 .footer__link {
   align-items: baseline;
   display: flex;

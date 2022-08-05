@@ -1,6 +1,7 @@
 .project__filter {
   display: flex;
   justify-content: center;
+
   gap: var(--filter-indent);
   margin-bottom: 50px;
 }
@@ -47,10 +48,6 @@
   line-height: 1.55;
   color: var(--primary-white-color);
 }
-.project__item {
-  --items: 3;
-  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
-}
 
 .project__elements {
   position: relative;
@@ -62,7 +59,7 @@
   height: 100%;
   padding: 63px 24px;
   transform: translateY(0);
-  transition: transform, var(--animation);
+  transition: transform var(--animation);
   background-color: rgba(33, 150, 243, 0.9);
 }
 .project__elements:hover .project__overlay {

@@ -11,14 +11,13 @@
   --card-border: #eeeeee;
   --icon-color: #afb1b8;
   --hero-bg-color: #c4c4c4; */
-*/
 
-  /* Fonts */
-  /* --main-font-family: 'Roboto', sans-serif;
+/* Fonts */
+/* --main-font-family: 'Roboto', sans-serif;
   --logo-font: 'Raleway', sans-serif; */
 
-  /* others */
-  /* --indent: 30px;
+/* others */
+/* --indent: 30px;
   --filter-indent: 8px;
   --items: 3;
   --border-radius-standart: 4px;
@@ -176,7 +175,7 @@ img {
   margin-right: 50px;
 } */
 
- /* .header__item :hover,
+/* .header__item :hover,
 .header__item :focus {
   color: var(--accent-color);
 } */
@@ -1002,10 +1001,6 @@ img {
   align-items: center;
 } */
 
-/* .register-form-title {
-  font-weight: 700;
-  font-size: 20px;
+ .register-form-title {
   line-height: 1.15;
-  text-align: center;
-  color: var(--secondary-color);
-/*
+}

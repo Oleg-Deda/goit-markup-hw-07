@@ -1,3 +1,7 @@
+.clients {
+  @extend %section;
+}
+
 .clients__item {
   display: block;
   justify-content: center;
@@ -5,12 +9,14 @@
 }
 
 .clients__list {
+  @extend %reset-list;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
 }
 .clients-link {
+  @extend %reset-link;
   display: flex;
   justify-content: center;
   align-items: center;
