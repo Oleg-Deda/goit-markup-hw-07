@@ -44,20 +44,21 @@
   font-size: 14px;
   line-height: 1.71;
   transition: color var(--animation);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
-.footer__email:hover,
-.footer__email:focus {
-  color: var(--accent-color);
-}
+
 .footer__tel {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71;
   transition: color var(--animation);
-}
-.footer__tel:hover,
-.footer__tel:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer__list {
@@ -83,18 +84,17 @@
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   transition: color var(--animation), background-color var(--animation);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+  }
 }
 
 .footer__links {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-}
-
-.footer__link:hover,
-.footer__link:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
 }
 
 .socials__icon {

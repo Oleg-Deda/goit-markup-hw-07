@@ -22,11 +22,11 @@
   color: var(--primary-white-color);
   background-color: transparent;
   transition: border-color var(--animation);
-}
 
-.subscription__email:hover,
-.subscription__email:focus {
-  border-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 
 .subscription__button {
@@ -44,16 +44,15 @@
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 }
 
 .send-icon {
   margin-left: 10px;
   fill: currentColor;
-}
-
-.subscription-button:hover,
-.subscription-button:focus {
-  cursor: pointer;
 }
 
 .subscription__container {
