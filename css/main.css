@@ -73,8 +73,6 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 /* project set */
@@ -113,9 +111,7 @@ img {
   -webkit-transition: background-color var(--animation);
   transition: background-color var(--animation);
 }
-
-.hero__button:hover,
-.hero__button:focus {
+.hero__button:hover, .hero__button:focus {
   background-color: #188ce8;
   cursor: pointer;
 }
@@ -144,9 +140,7 @@ img {
   -webkit-transition: color var(--animation), border-color var(--animation);
   transition: color var(--animation), border-color var(--animation);
 }
-
-.btn__close:focus,
-.btn__close:hover {
+.btn__close:focus, .btn__close:hover {
   color: var(--accent-color);
   /* border: 1px solid var(--accent-color); */
   cursor: pointer;
@@ -193,9 +187,7 @@ img {
   transition: color var(--animation), background-color var(--animation), box-shadow var(--animation);
   transition: color var(--animation), background-color var(--animation), box-shadow var(--animation), -webkit-box-shadow var(--animation);
 }
-
-.project__btn:hover,
-.project__btn:focus {
+.project__btn:hover, .project__btn:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -417,16 +409,9 @@ img {
   -webkit-transition: border-color var(--animation);
   transition: border-color var(--animation);
 }
-
-.registration__input:hover + .registration__icon,
-.registration__input:focus + .registration__icon {
+.registration__input:hover, .registration__input:focus {
   fill: var(--accent-color);
   outline: none;
-  border-color: var(--accent-color);
-}
-
-.registration__input:hover,
-.registration__input:focus {
   border-color: var(--accent-color);
 }
 
@@ -562,9 +547,7 @@ img {
   -webkit-transition: border-color var(--animation);
   transition: border-color var(--animation);
 }
-
-.subscription__email:hover,
-.subscription__email:focus {
+.subscription__email:hover, .subscription__email:focus {
   border-color: var(--accent-color);
 }
 
@@ -589,15 +572,13 @@ img {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+.subscription__button:hover, .subscription__button:focus {
+  cursor: pointer;
+}
 
 .send-icon {
   margin-left: 10px;
   fill: currentColor;
-}
-
-.subscription-button:hover,
-.subscription-button:focus {
-  cursor: pointer;
 }
 
 .subscription__container {
@@ -662,16 +643,13 @@ img {
   display: flex;
   gap: 50px;
 }
-
-.nav__list :hover,
-.nav__list :focus {
+.nav__list:hover, .nav__list:focus {
   color: var(--accent-color);
 }
 
 .nav__link--current {
   position: relative;
 }
-
 .nav__link--current::after {
   content: " ";
   position: absolute;
@@ -696,9 +674,7 @@ img {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
-
-.header__item :hover,
-.header__item :focus {
+.header__item:hover, .header__item:focus {
   color: var(--accent-color);
 }
 
@@ -924,18 +900,16 @@ img {
   -webkit-transition: color var(--animation), border var(--animation);
   transition: color var(--animation), border var(--animation);
 }
+.clients-link:hover, .clients-link:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
 
 .clients-icon {
   fill: currentColor;
   display: inline-block;
   fill: currentColor;
   vertical-align: middle;
-}
-
-.clients-link:hover,
-.clients-link:focus {
-  color: var(--accent-color);
-  border: 1px solid var(--accent-color);
 }
 
 .footer-container {
@@ -1003,9 +977,7 @@ img {
   -webkit-transition: color var(--animation);
   transition: color var(--animation);
 }
-
-.footer__email:hover,
-.footer__email:focus {
+.footer__email:hover, .footer__email:focus {
   color: var(--accent-color);
 }
 
@@ -1016,9 +988,7 @@ img {
   -webkit-transition: color var(--animation);
   transition: color var(--animation);
 }
-
-.footer__tel:hover,
-.footer__tel:focus {
+.footer__tel:hover, .footer__tel:focus {
   color: var(--accent-color);
 }
 
@@ -1060,6 +1030,10 @@ img {
   -webkit-transition: color var(--animation), background-color var(--animation);
   transition: color var(--animation), background-color var(--animation);
 }
+.footer__link:hover, .footer__link:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
 
 .footer__links {
   -webkit-box-sizing: border-box;
@@ -1071,12 +1045,6 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.footer__link:hover,
-.footer__link:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
 }
 
 .socials__icon {
@@ -1136,16 +1104,13 @@ img {
   display: flex;
   gap: 50px;
 }
-
-.nav__list :hover,
-.nav__list :focus {
+.nav__list:hover, .nav__list:focus {
   color: var(--accent-color);
 }
 
 .nav__link--current {
   position: relative;
 }
-
 .nav__link--current::after {
   content: " ";
   position: absolute;
