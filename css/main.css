@@ -204,7 +204,7 @@ img {
   padding-top: 94px;
 }
 
-.footer__list, .clients__list, .socials__list, .team__list, .about__list, .features__list, .header__item, .nav__list {
+.footer__list, .clients__list, .socials__list, .team__list, .about__list, .features__list, .header__item {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -410,8 +410,6 @@ img {
   transition: border-color var(--animation);
 }
 .registration__input:hover, .registration__input:focus {
-  fill: var(--accent-color);
-  outline: none;
   border-color: var(--accent-color);
 }
 
@@ -429,8 +427,12 @@ img {
   transition: var(--animation);
   color: var(--accent-color);
 }
-.registration__icon:focus, .registration__icon:hover {
+
+.registration__input:hover + .registration__icon,
+.registration__input:focus + .registration__icon {
   fill: var(--accent-color);
+  outline: none;
+  border-color: var(--accent-color);
 }
 
 .registration__message {
@@ -643,13 +645,16 @@ img {
   display: flex;
   gap: 50px;
 }
-.nav__list:hover, .nav__list:focus {
+
+.nav__item:hover,
+.nav__item:focus {
   color: var(--accent-color);
 }
 
 .nav__link--current {
   position: relative;
 }
+
 .nav__link--current::after {
   content: " ";
   position: absolute;
@@ -674,7 +679,9 @@ img {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
-.header__item:hover, .header__item:focus {
+
+.header__item :hover,
+.header__item :focus {
   color: var(--accent-color);
 }
 
@@ -1104,13 +1111,16 @@ img {
   display: flex;
   gap: 50px;
 }
-.nav__list:hover, .nav__list:focus {
+
+.nav__list:hover,
+.nav__list:focus {
   color: var(--accent-color);
 }
 
 .nav__link--current {
   position: relative;
 }
+
 .nav__link--current::after {
   content: " ";
   position: absolute;

@@ -74,11 +74,8 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color var(--animation);
-
   &:hover,
   &:focus {
-    fill: var(--accent-color);
-    outline: none;
     border-color: var(--accent-color);
   }
 }
@@ -95,11 +92,13 @@
   left: 12px;
   transition: var(--animation);
   color: var(--accent-color);
+}
 
-  &:focus,
-  &:hover {
-    fill: var(--accent-color);
-  }
+.registration__input:hover + .registration__icon,
+.registration__input:focus + .registration__icon {
+  fill: var(--accent-color);
+  outline: none;
+  border-color: var(--accent-color);
 }
 
 .registration__message {
