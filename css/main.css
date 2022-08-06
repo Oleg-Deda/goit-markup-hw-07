@@ -625,16 +625,6 @@ img {
   margin-right: auto;
 }
 
-.nav__link {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  -webkit-transition: color var(--animation);
-  transition: color var(--animation);
-}
-
 .nav__list {
   color: var(--secondary-color);
   font-weight: 500;
@@ -646,8 +636,16 @@ img {
   gap: 50px;
 }
 
-.nav__item:hover,
-.nav__item:focus {
+.nav__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  -webkit-transition: color var(--animation);
+  transition: color var(--animation);
+}
+.nav__link:hover, .nav__link:focus {
   color: var(--accent-color);
 }
 
@@ -679,9 +677,7 @@ img {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
-
-.header__item :hover,
-.header__item :focus {
+.header__item :hover, .header__item :focus {
   color: var(--accent-color);
 }
 
@@ -1112,11 +1108,6 @@ img {
   gap: 50px;
 }
 
-.nav__list:hover,
-.nav__list:focus {
-  color: var(--accent-color);
-}
-
 .nav__link--current {
   position: relative;
 }
@@ -1140,6 +1131,9 @@ img {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+.header__item :hover, .header__item :focus {
+  color: var(--accent-color);
 }
 
 .project__filter {
@@ -1187,9 +1181,7 @@ img {
   transition: box-shadow var(--animation);
   transition: box-shadow var(--animation), -webkit-box-shadow var(--animation);
 }
-
-.project__link:hover,
-.project__link:focus {
+.project__link:hover, .project__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }

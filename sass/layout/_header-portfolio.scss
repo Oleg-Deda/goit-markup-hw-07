@@ -43,11 +43,6 @@
   gap: 50px;
 }
 
-.nav__list:hover,
-.nav__list:focus {
-  color: var(--accent-color);
-}
-
 .nav__link--current {
   position: relative;
 }
@@ -68,4 +63,9 @@
   @extend %reset-list;
   display: flex;
   align-items: baseline;
+
+  & :hover,
+  & :focus {
+    color: var(--accent-color);
+  }
 }
