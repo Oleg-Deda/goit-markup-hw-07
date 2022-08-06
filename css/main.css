@@ -1156,15 +1156,6 @@ img {
   gap: var(--indent);
 }
 
-.project__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: var(--indent);
-}
-
 .project-text {
   color: var(--secondary-color);
 }

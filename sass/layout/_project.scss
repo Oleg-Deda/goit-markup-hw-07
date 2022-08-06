@@ -1,15 +1,8 @@
 .project__filter {
   display: flex;
   justify-content: center;
-
   gap: var(--filter-indent);
   margin-bottom: 50px;
-}
-
-.project__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--indent);
 }
 
 .project__list {
